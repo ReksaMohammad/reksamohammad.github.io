@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Reksa Mohammad's Portfolio</title>
     <link rel="shortcut icon" type="image/jpg" href="logo.svg"/>
@@ -24,7 +25,7 @@
             <a class="navbar-brand" href="#">
                 <img src="logo.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-align-center"></i>
@@ -49,18 +50,20 @@
 
     <!-- section 1 -->
     <!-- <img class="bg-line position-absolute w-100 h-75" src="bg-line.png" alt=""> -->
-    <div class="container section-1">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-                <div class="text">
-                    <h3 class="mb-3">👋</h3>
-                    <h4 class="mb-3">Hi! I’m <span class="text-primary">Reksa Mohammad</span>,<br>User Interface Designer</h4>
-                    <p class="text-body-1 mb-5 text-secondary-2">A Person who fall in love with solving a problem through visual design.</p>
-                    <a href="#section-2" type="button" class="btn btn-primary">Explore My Works</a>
+    <div id="section-1" class="section-1">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="text">
+                        <h3 class="mb-3">👋</h3>
+                        <h4 class="mb-3">Hi! I’m <span class="text-primary">Reksa Mohammad</span>,<br>User Interface Designer</h4>
+                        <p class="text-body-1 mb-5 text-secondary-2">A Person who fall in love with solving a problem through visual design.</p>
+                        <a href="#section-2" class="btn btn-primary">Explore My Works</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img class="w-100 d-none d-md-block" src="img.png" alt="">
+                <div class="col-md-6">
+                    <img class="w-100 d-none d-md-block" src="img.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -79,7 +82,7 @@
                 <!-- Card Works -->
                 <div class="col-md-6 mb-4">
                     <a href="#" class="card">
-                        <img src="Pikobar.jpg" alt="">
+                        <img class="w-100" src="Pikobar.jpg" alt="">
                         <div class="card-text">
                             <div class="text-caption-1 text-secondary mb-3">
                                 Mobile Apps Design ∙ 2020
@@ -94,7 +97,7 @@
                 <!-- Card Works -->
                 <div class="col-md-6">
                     <a href="#" class="card">
-                        <img src="Hai Dafam.jpg" alt="">
+                        <img class="w-100" src="Hai Dafam.jpg" alt="">
                         <div class="card-text">
                             <div class="text-caption-1 text-secondary mb-3">
                                 Mobile Apps Design ∙ 2019
@@ -108,7 +111,7 @@
                 <!-- End Card Works -->
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <a href="#" type="button" class="btn btn-primary d-flex">View More Works (11) <img class="ms-3" src="arrow.svg" alt=""></a>
+                <a href="#" class="btn btn-primary d-flex">View More Works (11) <img class="ms-3" src="arrow.svg" alt=""></a>
             </div>
         </div>
     </div>
