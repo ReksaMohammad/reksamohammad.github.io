@@ -124,6 +124,9 @@ a {
     background-color: #330DF2;
     border-color: #330DF2;
     box-shadow: 0px 4px 8px 2px rgba(92, 61, 245, 0.24);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(92, 61, 245, 0.24);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(92, 61, 245, 0.24);
+    -ms-box-shadow: 0px 4px 8px 2px rgba(92, 61, 245, 0.24);
 }
 
 .btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-primary.active, .btn-primary:active, .show > .btn-primary.dropdown-toggle {
@@ -196,6 +199,7 @@ a {
 
 .navbar-light {
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -300,7 +304,7 @@ footer {
 
 @media (max-width: 576px) {
     .section-1 {
-        padding: 9rem 1rem;
+        padding: 9rem .5rem;
         margin-top: 0;
         height: 100%;
     }
@@ -326,8 +330,8 @@ footer {
     .section-4 {
         padding-top: 0;
         padding-bottom: 3rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 
     .section-4 h4 {
