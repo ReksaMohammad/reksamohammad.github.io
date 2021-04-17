@@ -3,48 +3,41 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 html {
@@ -103,7 +96,7 @@ a {
 :root {
     --color-primary: #5C3DF5;
     --color-secondary: #928FA3;
-  }
+}
 
 .bg-line {
     z-index: -1;
@@ -129,7 +122,7 @@ a {
     -ms-box-shadow: 0px 4px 8px 2px rgba(92, 61, 245, 0.24);
 }
 
-.btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-primary.active, .btn-primary:active, .show > .btn-primary.dropdown-toggle {
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
     background-color: #330DF2;
     border-color: #330DF2;
 }
@@ -256,7 +249,7 @@ a {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.section-4 .icon > div {
+.section-4 .icon > a {
     background-color: #fff;
     padding: 0.875rem;
     border-radius: 1rem;
@@ -308,73 +301,58 @@ footer {
         margin-top: 0;
         height: 100%;
     }
-
     .section-2 {
         padding: 3rem .5rem;
     }
-
     .section-2 h4 {
         font-size: 2rem;
         line-height: 3rem;
     }
-
     .section-3 {
         padding: 3rem .5rem;
     }
-
     .section-3 h4 {
         font-size: 2rem;
         line-height: 3rem;
     }
-
     .section-4 {
         padding-top: 0;
         padding-bottom: 3rem;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
-
     .section-4 h4 {
         font-size: 2rem;
         line-height: 3rem;
     }
-
     .section-4 .text-subtitle-1 {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
     .section-4 .container {
         margin-bottom: 0;
     }
-
     .card-text {
         padding: 1.5rem;
     }
-
     .card-text .text-body-1 {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
     .card-text .text-caption-1 {
         font-size: 0.875rem;
         line-height: 1.25rem;
     }
-
     .card-text h6 {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
     .title-section {
         margin-bottom: 1.5rem;
     }
-
     .section-3 .title-section {
         margin-bottom: 1.5rem;
     }
-
     .section-3 .mb-5 {
         margin-bottom: 1.5rem !important;
     }
