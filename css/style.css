@@ -395,4 +395,7 @@ footer {
     .section-3 .mb-5 {
         margin-bottom: 1.5rem !important;
     }
+   .no-page {
+        margin-top: 7.5rem;
+   }
 }
