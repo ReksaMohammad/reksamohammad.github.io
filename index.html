@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Reksa Mohammad's Portfolio</title>
     <link rel="shortcut icon" type="image/jpg" href="logo.svg" />
@@ -20,12 +21,13 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light vw-100">
         <div class="container">
-            <a class="navbar-brand" href="#section-1">
+            <a class="navbar-brand" name="section-1" href="#section-1">
                 <img src="logo.svg" alt="">
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fas fa-align-center"></i>
                 </span>
@@ -49,10 +51,10 @@
 
     <!-- section 1 -->
     <!-- <img class="bg-line position-absolute w-100 h-75" src="bg-line.png" alt=""> -->
-    <div id="section-1" class="section-1">
+    <div id="section-1" name="section-1" class="section-1">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="text">
                         <h3 class="mb-3">👋</h3>
                         <h4 class="mb-3">Hi! I’m <span class="text-primary">Reksa Mohammad</span>,<br>User Interface
@@ -62,7 +64,7 @@
                         <a href="#section-2" class="btn btn-primary">Explore My Works</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                     <img class="w-100 d-none d-md-block" src="img.png" alt="">
                 </div>
             </div>
@@ -71,7 +73,7 @@
     <!-- end section 1 -->
 
     <!-- section 2 -->
-    <div id="section-2" class="section-2">
+    <div id="section-2" name="section-2" class="section-2">
         <div class="container">
             <div class="title-section">
                 <div class="text-caption-2 mb-2 text-primary">
@@ -81,8 +83,8 @@
             </div>
             <div class="row">
                 <!-- Card Works -->
-                <div class="col-md-6 mb-4">
-                    <a href="#" class="card">
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <a href="no-page.html" class="card">
                         <img class="w-100" src="Pikobar.jpg" alt="">
                         <div class="card-text">
                             <div class="text-caption-1 text-secondary mb-3">
@@ -97,7 +99,7 @@
                 </div>
                 <!-- End Card Works -->
                 <!-- Card Works -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                     <a href="#" class="card">
                         <img class="w-100" src="Hai Dafam.jpg" alt="">
                         <div class="card-text">
@@ -114,8 +116,7 @@
                 <!-- End Card Works -->
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <a href="#" class="btn btn-primary d-flex">View More Works (11) <img class="ms-3" src="arrow.svg"
-                        alt=""></a>
+                <a href="#" class="btn btn-primary d-flex">View More Works (11) <img class="ms-3" src="arrow.svg" alt=""></a>
             </div>
         </div>
     </div>
@@ -131,10 +132,10 @@
                 <h4>About Me</h4>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-duration="1000">
                     <h4>Accomplished UI/UX Designer with 2+ years of experience eager to make a positive impact.</h4>
                 </div>
-                <div class="col-md-6 text-body-1 text-secondary-2">
+                <div class="col-md-6 text-body-1 text-secondary-2" data-aos="fade-left" data-aos-duration="1000">
                     Persistence, curiosity and an obsessive attention to details define me. Experience as digital
                     designer and frontend developer.<br><br>Currently working as a full-time UI Designer in Jabar
                     Digital Services a unit under the West Java Province Information and Communication Office.
@@ -145,7 +146,7 @@
     <!-- End Section 3 -->
 
     <!-- Section 4 -->
-    <div id="section-4" class="section-4">
+    <div id="section-4" class="section-4" data-aos="fade-up" data-aos-duration="1000">
         <div class="container d-flex justify-content-center align-items-center">
             <img class="accent-left d-none d-md-block" src="Accent-Left.svg" alt="">
             <div class="wrapper">
@@ -184,6 +185,10 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+    </script>
 </body>
 
 </html>
