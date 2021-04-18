@@ -20,7 +20,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    overflow-x: hidden;
 }
 
 ol, ul {
@@ -219,6 +218,7 @@ a {
     margin-top: 4.875rem;
     padding-top: 9.375rem;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .section-2 {
@@ -226,11 +226,13 @@ a {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: #FAF9FA;
+    overflow-x: hidden;
 }
 
 .section-3 {
     padding-top: 5rem;
     padding-bottom: 7.5rem;
+    overflow-x: hidden;
 }
 
 .section-4 .container {
@@ -240,6 +242,7 @@ a {
     padding-bottom: 6.25rem;
     margin-bottom: 6.25rem;
     position: relative;
+    overflow-x: hidden;
 }
 
 .section-4 h4 {
