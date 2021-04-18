@@ -20,7 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    overflow-x: hiden;
+    overflow-x: hidden;
 }
 
 ol, ul {
