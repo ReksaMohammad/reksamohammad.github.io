@@ -1,3 +1,10 @@
+// const navLinks = document.querySelectorAll('.nav-item')
+// const menuToggle = document.getElementById('navbarNav')
+// const bsCollapse = new bootstrap.Collapse(menuToggle)
+// navLinks.forEach((l) => {
+//     l.addEventListener('click', () => { bsCollapse.toggle() })
+// }}
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('navbarSupportedContent').addEventListener('click', function () {
         var el = document.getElementById('navbarSupportedContent')
@@ -23,4 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+    AOS.init({
+        easing: 'ease-in-out',
+        mirror: true
+    });
+
+    var hash = window.location.hash;
+
+  if (hash && document.getElementById(hash.slice(1))) {
+    var $this = $(hash);
+    $('html, body').animate({
+      scrollTop: $this.offset().top - $("a[href='" + hash + "']").data('offset')
+    }, 400, 'swing', function () {
+      window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
+    });
+  }
 });
