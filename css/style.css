@@ -20,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
+    overflow-x: hiden;
 }
 
 ol, ul {
@@ -43,7 +44,6 @@ table {
 html {
     padding: 0;
     margin: 0;
-    transition: 1s;
 }
 
 body {
