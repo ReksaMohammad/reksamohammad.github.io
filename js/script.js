@@ -33,17 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     AOS.init({
         easing: 'ease-in-out',
-        mirror: true
+        mirror: true,
+        duration: 600
     });
 
     var hash = window.location.hash;
 
-  if (hash && document.getElementById(hash.slice(1))) {
-    var $this = $(hash);
-    $('html, body').animate({
-      scrollTop: $this.offset().top - $("a[href='" + hash + "']").data('offset')
-    }, 400, 'swing', function () {
-      window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
-    });
-  }
+    if (hash && document.getElementById(hash.slice(1))) {
+        var $this = $(hash);
+        $('html, body').animate({
+            scrollTop: $this.offset().top - $("a[href='" + hash + "']").data('offset')
+        }, 400, 'swing', function () {
+            window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
+        });
+    }
 });
