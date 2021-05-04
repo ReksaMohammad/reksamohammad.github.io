@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Work Sans', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -55,38 +55,38 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 6.875rem;
 }
 
 h2 {
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 5rem;
 }
 
 h3 {
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 3.75rem;
 }
 
 h4 {
     font-size: 2.5rem;
-    line-height: 3.5rem;
-    font-weight: 900;
+    line-height: 3.25rem;
+    font-weight: 700;
 }
 
 h5 {
     font-size: 2rem;
-    line-height: 3rem;
-    font-weight: 900;
+    line-height: 2.5rem;
+    font-weight: 700;
 }
 
 h6 {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 a {
@@ -96,6 +96,9 @@ a {
 :root {
     --color-primary: #5C3DF5;
     --color-secondary: #928FA3;
+    --color-dark-500: #302E38;
+    --color-dark-300: #5F5C70;
+    --color-dark-100: #928FA3;
 }
 
 .bg-line {
@@ -136,7 +139,7 @@ a {
 }
 
 .text-secondary-2 {
-    color: #5F5C70;
+    color: var(--color-dark-300) !important;
 }
 
 .text-body-1 {
@@ -146,14 +149,14 @@ a {
 }
 
 .text-caption-1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 1.5rem;
     text-transform: uppercase;
 }
 
 .text-caption-2 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 0.875rem;
     line-height: 20px;
     text-transform: uppercase;
@@ -161,9 +164,9 @@ a {
 }
 
 .text-subtitle-1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 2rem;
 }
 
 .title-section {
@@ -175,7 +178,7 @@ a {
 }
 
 .card {
-    border-radius: 2rem !important;
+    border-radius: 1rem !important;
     overflow: hidden;
     border: none;
     box-shadow: 0px 4px 24px rgba(48, 46, 56, 0.08);
@@ -198,7 +201,12 @@ a {
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, .1);
-    border-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.navbar-light .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
 }
 
 .nav-link {
@@ -327,7 +335,7 @@ footer {
         vertical-align: top;
     }
     .nav-link {
-        padding: 1rem !important;
+        padding: 1.5rem !important;
     }
     .navbar .navbar-collapse {
         text-align: center;
@@ -335,6 +343,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+    :root {
+        font-size: 14px;
+    }
+
     .section-1 {
         padding: 9rem .5rem;
         margin-top: 0;
@@ -343,16 +355,8 @@ footer {
     .section-2 {
         padding: 3rem .5rem;
     }
-    .section-2 h4 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
     .section-3 {
         padding: 3rem .5rem;
-    }
-    .section-3 h4 {
-        font-size: 2rem;
-        line-height: 3rem;
     }
     .section-4 {
         padding-top: 0;
@@ -360,31 +364,11 @@ footer {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
-    .section-4 h4 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-    .section-4 .text-subtitle-1 {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
     .section-4 .container {
         margin-bottom: 0;
     }
     .card-text {
         padding: 1.5rem;
-    }
-    .card-text .text-body-1 {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-    .card-text .text-caption-1 {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
-    .card-text h6 {
-        font-size: 1rem;
-        line-height: 1.5rem;
     }
     .title-section {
         margin-bottom: 1.5rem;
@@ -395,7 +379,8 @@ footer {
     .section-3 .mb-5 {
         margin-bottom: 1.5rem !important;
     }
-   .no-page {
+
+    .no-page {
         margin-top: 7.5rem;
-   }
+    }
 }
