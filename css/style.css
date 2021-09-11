@@ -240,7 +240,7 @@ a {
 }
 
 .card {
-    border-radius: 1rem !important;
+    border-radius: 2rem !important;
     overflow: hidden;
     border: none;
     box-shadow: 0px 4px 24px rgba(48, 46, 56, 0.08);
@@ -315,6 +315,8 @@ a {
     margin-bottom: 1.5rem;
     position: relative;
     overflow-x: hidden;
+    --smooth-corners: 4;
+    mask-image: paint(smooth-corners);
 }
 
 .section-4 h4 {
@@ -404,7 +406,7 @@ a {
 
 footer {
     padding: 1rem;
-    background-color: #FAF9FA;
+    background-color: #fafafa;
     width: 100%;
     clear: both;
     position: relative;
@@ -449,10 +451,7 @@ footer {
         padding: 3rem .5rem;
     }
     .section-4 {
-        padding-top: 0;
-        padding-bottom: 3rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding: 0 0.5rem 0 0.5rem;
     }
     .section-4 .container {
         margin-bottom: 0;
