@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+    
 
     AOS.init({
         easing: 'ease-in-out',
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var $this = $(hash);
         $('html, body').animate({
             scrollTop: $this.offset().top - $("a[href='" + hash + "']").data('offset')
-        }, 400, 'swing', function () {
+        }, 600, 'swing', function () {
             window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
         });
     }
