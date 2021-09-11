@@ -50,7 +50,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color: #302E38 !important;
+    color: #303336 !important;
 }
 
 h1 {
@@ -95,11 +95,62 @@ a {
 
 :root {
     --color-primary: #5C3DF5;
-    --color-secondary: #928FA3;
-    --color-dark-500: #302E38;
-    --color-dark-300: #5F5C70;
-    --color-dark-100: #928FA3;
+    --color-grey-900: #181A1B;
+    --color-grey-800: #303336;
+    --color-grey-700: #494D50;
+    --color-grey-600: #61666B;
+    --color-grey-500: #798086;
+    --color-grey-400: #94999E;
+    --color-grey-300: #AFB2B6;
+    --color-grey-200: #C9CCCF;
+    --color-grey-100: #E4E5E7;
+    --color-grey-50: #F2F2F3;
 }
+
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.color-grey-900 {
+    color: var(--color-grey-900) !important;
+}
+
+.color-grey-800 {
+    color: var(--color-grey-800) !important;
+}
+
+.color-grey-700 {
+    color: var(--color-grey-700) !important;
+}
+
+.color-grey-600 {
+    color: var(--color-grey-600) !important;
+}
+
+.color-grey-500 {
+    color: var(--color-grey-500) !important;
+}
+
+.color-grey-400 {
+    color: var(--color-grey-400) !important;
+}
+
+.color-grey-300 {
+    color: var(--color-grey-300) !important;
+}
+
+.color-grey-200 {
+    color: var(--color-grey-200) !important;
+}
+
+.color-grey-100 {
+    color: var(--color-grey-100) !important;
+}
+
+.color-grey-50 {
+    color: var(--color-grey-50) !important;
+}
+
 
 .bg-line {
     z-index: -1;
@@ -130,21 +181,21 @@ a {
     border-color: #330DF2;
 }
 
-.text-primary {
-    color: var(--color-primary) !important;
-}
-
-.text-secondary {
-    color: var(--color-secondary) !important;
-}
-
-.text-secondary-2 {
-    color: var(--color-dark-300) !important;
-}
-
 .text-body-1 {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.text-body-2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+
+.text-body-3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 400;
 }
 
@@ -160,13 +211,24 @@ a {
     font-size: 0.875rem;
     line-height: 20px;
     text-transform: uppercase;
-    color: var(--color-primary);
 }
 
 .text-subtitle-1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+.text-subtitle-2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.text-subtitle-3 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 .title-section {
@@ -226,16 +288,16 @@ a {
 
 .section-1 {
     margin-top: 4.875rem;
-    padding-top: 9.375rem;
-    height: 100vh;
+    padding-top: 10rem;
     overflow-x: hidden;
+    margin-bottom: 10rem;
 }
 
 .section-2 {
     margin-top: -78px;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #FAF9FA;
+    background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #FAFAFA 100%);
     overflow-x: hidden;
 }
 
@@ -245,12 +307,12 @@ a {
     overflow-x: hidden;
 }
 
-.section-4 .container {
+.section-4 .contact {
     background-color: var(--color-primary);
     border-radius: 2rem;
     padding-top: 5rem;
     padding-bottom: 6.25rem;
-    margin-bottom: 6.25rem;
+    margin-bottom: 1.5rem;
     position: relative;
     overflow-x: hidden;
 }
@@ -259,14 +321,13 @@ a {
     color: #fff !important;
 }
 
-.section-4 span {
+.section-4 span, .section-4 a {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.section-4 .icon>a {
-    background-color: #fff;
-    padding: 0.875rem;
-    border-radius: 1rem;
+.section-4 .email {
+    text-decoration: none;
+
 }
 
 .section-4 .accent-left {
@@ -281,6 +342,33 @@ a {
     right: 0;
     bottom: 0;
     padding: 2rem;
+}
+
+.section-4 .socialmedia .wrapper {
+    background: #fafafa;
+    margin: 0;
+    padding: 2rem;
+    position: relative;
+    border-radius: 2rem;
+    transition: .4s;
+}
+
+.section-4 .socialmedia .wrapper:hover {
+    box-shadow: 0px 16px 24px rgba(48, 46, 56, 0.08);
+    transform: scale(1.01);
+    transition: .4s;
+}
+
+.section-4 .socialmedia .wrapper .instagram {
+    background: -webkit-linear-gradient(45deg, #FFC273, #E56969, #8A49A1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-4 .socialmedia .wrapper .accent-media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .no-page {
@@ -350,9 +438,9 @@ footer {
     }
 
     .section-1 {
-        padding: 9rem .5rem;
+        padding-top: 8rem;
+        padding-bottom: 0;
         margin-top: 0;
-        height: 100%;
     }
     .section-2 {
         padding: 3rem .5rem;
