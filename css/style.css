@@ -347,7 +347,7 @@ a {
 
 .section-4 .socialmedia .wrapper {
     background: #fff;
-    border: 2px solid var(--color-grey-50);
+    border: 1px solid var(--color-grey-50);
     margin: 0;
     padding: 2rem;
     position: relative;
@@ -449,6 +449,14 @@ footer {
     position: relative;
     bottom: 0;
 }
+
+.mask {
+  --smooth-corners: 16;
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
+  background: #d01257; /* So you can see it */
+}
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
