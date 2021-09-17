@@ -56,7 +56,7 @@
     <!-- <img class="bg-line position-absolute w-100 h-75" src="bg-line.png" alt=""> -->
     <div id="section-1" name="section-1" class="section-1" data-aos="fade-up">
         <div class="container">
-            <div class="row d-flex align-items-center justify-content-center mb-2">
+            <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-xl-6 text-center">
                     <div class="text">
                         <h3 class="mb-3">👋</h3>
@@ -76,11 +76,11 @@
             <div class="row">
                 <!-- Card Works -->
                 <div class="col-md-4 mb-4">
-                    <a href="no-page.html" class="card">
+                    <a href="no-page.html" class="card wip">
                         <img class="w-100" src="Design System.jpg" alt="">
                         <div class="card-text">
-                            <div class="text-caption-1 color-grey-400 mb-3">
-                                Design System ∙ 2021
+                            <div class="text-caption-2 color-grey-400 mb-2">
+                                <span class="badge">WIP</span> Design System ∙ 2021
                             </div>
                             <div class="text-subtitle-2 mb-3">
                                 <p>Jabar Design System <span class="text-body-2 color-grey-400">∙ The Government of West Java Public Design System</span></p>
@@ -91,11 +91,11 @@
                 <!-- End Card Works -->
                 <!-- Card Works -->
                 <div class="col-md-4 mb-4">
-                    <a href="no-page.html" class="card">
+                    <a href="no-page.html" class="card wip">
                         <img class="w-100" src="Pikobar.jpg" alt="">
                         <div class="card-text">
-                            <div class="text-caption-1 color-grey-400 mb-3">
-                                Mobile Apps Design ∙ 2020
+                            <div class="text-caption-2 color-grey-400 mb-2">
+                                <span class="badge">WIP</span> Mobile Apps Design ∙ 2020
                             </div>
                             <div class="text-subtitle-2 mb-3">
                                 <p>Pikobar Mobile <span class="text-body-2 color-grey-400">∙ West Java Information and Coordination Center for Covid-19</span></p>
@@ -106,14 +106,14 @@
                 <!-- End Card Works -->
                 <!-- Card Works -->
                 <div class="col-md-4">
-                    <a href="no-page.html" class="card">
+                    <a href="no-page.html" class="card wip">
                         <img class="w-100" src="Hai Dafam.jpg" alt="">
                         <div class="card-text">
-                            <div class="text-caption-1 color-grey-400 mb-3">
-                                Mobile Apps Design ∙ 2019
+                            <div class="text-caption-2 color-grey-400 mb-2">
+                                <span class="badge">WIP</span> Mobile Apps Design ∙ 2019
                             </div>
                             <div class="text-subtitle-2 mb-3">
-                                <p>Hai Dafam! <span class="text-body-2 color-grey-400">∙ Hotel and Restaurant Booking Application at Dafam Group</span></p>
+                                <p>Hai Dafam! <span class="text-body-2 color-grey-400">∙ Hotel and Restaurant Booking App at Dafam Hotel Management</span></p>
                             </div>
                         </div>
                     </a>
@@ -219,8 +219,9 @@
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        
+        if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
     </script>
+      
 </body>
 
 </html>
