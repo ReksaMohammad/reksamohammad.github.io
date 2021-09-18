@@ -390,7 +390,7 @@ a {
     margin: 0;
     padding: 2rem;
     position: relative;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     transition: .4s;
 }
 
@@ -508,10 +508,10 @@ footer {
 }
 
 .mask {
-  --smooth-corners: 16;
-  mask-image: paint(smooth-corners);
-  -webkit-mask-image: paint(smooth-corners);
-  background: #d01257; /* So you can see it */
+    --smooth-corners: 16;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+    background: #d01257; /* So you can see it */
 }
 
 
