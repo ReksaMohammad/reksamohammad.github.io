@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -477,7 +477,7 @@ a {
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-.wip .badge {
+.badge {
     font-size: .75rem;
     color: #fff;
     font-weight: 500;
@@ -509,6 +509,36 @@ a {
     }
 }
 
+.rotate-center {
+	-webkit-animation: rotate-center 4s linear infinite both;
+    animation: rotate-center 4s linear infinite both;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
 footer {
     padding: 1rem;
     background-color: #fafafa;
@@ -524,6 +554,73 @@ footer {
     -webkit-mask-image: paint(smooth-corners);
 }
 
+/* Page Design System */
+
+.design-system .image-hero img {
+    position: relative;
+    width: 100%;
+    height: 37.5rem;
+    object-fit: cover;
+}
+
+.design-system .section-content-1 {
+    margin-top: 5rem;
+}
+
+.design-system .section-content-1 .title-content .row:first-child {
+    margin-bottom: 5rem;
+}
+
+.design-system .card-role {
+    background-color: var(--color-primary);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.design-system .card-dashed {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    color: var(--var(--color-grey-800));
+    border: 1px dashed var(--color-grey-200);
+}
+
+.design-system .section-content-2 {
+    margin-top: 8rem;
+}
+
+.design-system .section-content-3 {
+    margin-top: 8rem;
+}
+
+.design-system .section-content-4 {
+    margin-top: 8rem;
+}
+
+.design-system .constraint-criteria {
+    margin-top: 5rem;
+}
+
+.design-system .research-analysis {
+    margin-top: 5rem;
+}
+
+.design-system .img img {
+    border-radius: 1.5rem;
+}
+
+.design-system .exploration {
+    margin-top: 5rem;
+}
+
+/* End Page Design System */
+
+@media (min-width: 1400px) {
+    .design-system .container {
+    max-width: 1140px;
+    }
+}
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -589,5 +686,8 @@ footer {
     }
     .scroll-top img {
         width: 20px;
+    }
+    .design-system .no-page .image svg {
+        width: 100%;
     }
 }
