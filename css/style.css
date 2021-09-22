@@ -586,32 +586,26 @@ footer {
     border: 1px dashed var(--color-grey-200);
 }
 
-.design-system .section-content-2 {
+.design-system .martop-10 {
+    margin-top: 10rem;
+}
+
+.design-system .martop-8 {
     margin-top: 8rem;
 }
 
-.design-system .section-content-3 {
-    margin-top: 8rem;
-}
-
-.design-system .section-content-4 {
-    margin-top: 8rem;
-}
-
-.design-system .constraint-criteria {
+.design-system .martop-5 {
     margin-top: 5rem;
 }
 
-.design-system .research-analysis {
-    margin-top: 5rem;
-}
-
-.design-system .img img {
+.design-system .img {
     border-radius: 1.5rem;
+    overflow: hidden;
 }
 
-.design-system .exploration {
-    margin-top: 5rem;
+.design-system .no-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /* End Page Design System */
@@ -690,7 +684,7 @@ footer {
     .design-system svg {
         width: 100%;
     }
-	.design-system {
+    .design-system {
         padding-left: .5rem;
         padding-right: .5rem;
     }
