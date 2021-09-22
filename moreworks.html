@@ -18,6 +18,7 @@
     <title>Reksa Mohammad's Portfolio</title>
     <meta name="description" content="Mohammad Reksa Suryapandita personal portfolio website. Reksa Mohammad">
     <link rel="shortcut icon" type="image/jpg" href="logo.svg" />
+    <link rel="stylesheet" href="pointer.css">
 </head>
 
 <body>
@@ -365,6 +366,14 @@
     <script>
         if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
     </script>
+    <script src="pointer.js"></script>
+    <script>
+        init_pointer({
+        pointerColor: "#5C3DF5",
+        ringSize: 4,
+        ringClickSize: 2
+    })
+    </script> 
 </body>
 
 </html>
