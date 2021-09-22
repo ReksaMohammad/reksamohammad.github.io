@@ -48,4 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
             window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
         });
     }
+
+    var image = document.getElementsByClassName('parallax');
+    new simpleParallax(image, {
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+    });
 });
