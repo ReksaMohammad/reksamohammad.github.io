@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var image = document.getElementsByClassName('parallax');
     new simpleParallax(image, {
-	delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)'
+	delay: 1,
+	transition: 'cubic-bezier(0,0,0,1)',
+    scale: 1.4
     });
 });
