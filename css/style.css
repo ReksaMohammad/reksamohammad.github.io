@@ -556,29 +556,29 @@ footer {
 
 /* Page Design System */
 
-.design-system .image-hero img {
+.work-content .image-hero img {
     position: relative;
     width: 100%;
     height: 37.5rem;
     object-fit: cover;
 }
 
-.design-system .section-content-1 {
+.work-content .section-content-1 {
     margin-top: 5rem;
 }
 
-.design-system .section-content-1 .title-content .row:first-child {
+.work-content .section-content-1 .title-content .row:first-child {
     margin-bottom: 5rem;
 }
 
-.design-system .card-role {
+.work-content .card-role {
     background-color: var(--color-primary);
     border-radius: 1.5rem;
     padding: 1.5rem;
     color: #fff;
 }
 
-.design-system .card-dashed {
+.work-content .card-dashed {
     background-color: #fff;
     border-radius: 1.5rem;
     padding: 1.5rem;
@@ -586,24 +586,24 @@ footer {
     border: 1px dashed var(--color-grey-200);
 }
 
-.design-system .martop-10 {
+.work-content .martop-10 {
     margin-top: 10rem;
 }
 
-.design-system .martop-8 {
+.work-content .martop-8 {
     margin-top: 8rem;
 }
 
-.design-system .martop-5 {
+.work-content .martop-5 {
     margin-top: 5rem;
 }
 
-.design-system .img {
+.work-content .img {
     border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.design-system .no-page {
+.work-content .no-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -611,7 +611,7 @@ footer {
 /* End Page Design System */
 
 @media (min-width: 1400px) {
-    .design-system .container {
+    .work-content .container {
     max-width: 1140px;
     }
 }
@@ -681,10 +681,10 @@ footer {
     .scroll-top img {
         width: 20px;
     }
-    .design-system svg {
+    .work-content svg {
         width: 100%;
     }
-    .design-system {
+    .work-content {
         padding-left: .5rem;
         padding-right: .5rem;
     }
