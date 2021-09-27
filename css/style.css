@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -651,13 +651,13 @@ footer {
         margin-top: 0;
     }
     .section-2 {
-        padding: 3rem .5rem;
+        padding: 3rem .4rem;
     }
     .section-3 {
-        padding: 3rem .5rem;
+        padding: 3rem .4rem;
     }
     .section-4 {
-        padding: 0 0.5rem 0 0.5rem;
+        padding: 0 0.4rem 0 0.4rem;
     }
     .section-4 .container {
         margin-bottom: 0;
@@ -684,8 +684,11 @@ footer {
     .work-content svg {
         width: 100%;
     }
-    .work-content {
-        padding-left: .5rem;
-        padding-right: .5rem;
+    .work-content .container {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .work-content .section-4 {
+        padding: 0;
     }
 }
