@@ -300,10 +300,6 @@ a {
     border: none;
 }
 
-.card-text {
-    padding: 1.5rem;
-}
-
 .navbar-light {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -338,10 +334,6 @@ a {
     padding-top: 8rem;
     overflow: hidden;
     margin-bottom: 8rem;
-}
-
-.section-1 .text {
-    margin-bottom: 1rem;
 }
 
 .section-2 {
@@ -563,14 +555,6 @@ footer {
     object-fit: cover;
 }
 
-.work-content .section-content-1 {
-    margin-top: 5rem;
-}
-
-.work-content .section-content-1 .title-content .row:first-child {
-    margin-bottom: 5rem;
-}
-
 .work-content .card-role {
     background-color: var(--color-primary);
     border-radius: 1.5rem;
@@ -664,9 +648,6 @@ footer {
     }
     .section-4 .container {
         margin-bottom: 0;
-    }
-    .card-text {
-        padding: 1.5rem;
     }
     .title-section {
         margin-bottom: 1.5rem;
